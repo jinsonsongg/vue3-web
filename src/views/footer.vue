@@ -4,14 +4,19 @@
           <img class="img" src="../img/haoyue_logo_2.png" alt="logo2" >
         </div>
         <div class="footer_text">
-          <span class="span"><a href="#">闽ICP备2022014754号</a></span>
-          <span class="span"><a href="#">闽ICP备2022014754号-1</a></span>
-          <span class="span">邮箱：392093</span>
-          <span class="span">地址：福州市闽侯县南屿镇后山村76号福建路政工贸工业园11号楼11层1108室</span>
+          
+          <!-- <span class="span"><a href="#">闽ICP备2022014754号-1</a></span> -->
+          <span class="span">© 2019-2023 昊钺科技. All rights reserved. </span>
+          <span class="span"><a class="a" href="#">闽ICP备2022014754号</a></span>
         </div>
     </div>
 </template>
 <style scoped>
+body{
+  border: 0;
+  padding: 0 !important;
+  margin: 0;
+}
 
 .footer{
   text-align: center;
@@ -26,6 +31,10 @@
     color: #999999;
     .span{
       margin: 0 16px;
+    }
+    .a{
+      color: inherit;
+      text-decoration: none;
     }
     
     

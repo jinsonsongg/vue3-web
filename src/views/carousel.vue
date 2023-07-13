@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
-    <el-carousel class="carousel_size" :interval="5000">
-      <el-carousel-item >
+    <el-carousel class="carousel_size" :interval="0">
+      <el-carousel-item class="bigrb">
         <div class="rb rb1">
             <img class="img" src="../img/Engineering_team.svg" alt="">
             <div class="title">智慧物业管理系统
@@ -9,9 +9,11 @@
                     用数字化技术为物业收费</div>
                 <div class="title_info">
                     房屋租赁、园区招商、物业客户服务等管理赋能</div>
+                    
             </div>
-            <el-button>点击使用</el-button>
+            
         </div>
+        <a href="" class="a"><span>点击预览</span></a>
       </el-carousel-item>
       <el-carousel-item >
         <div class="rb rb2">
@@ -38,6 +40,9 @@
   
   <style scoped>
 
+    .bigrb{
+      height: 400px;
+    }
 
     .rb{
         color: rgb(19, 20, 20);
@@ -47,16 +52,62 @@
         .title{
             color: rgba(255, 255, 255, 0.75);
             font-size: 50px;
-            margin: 50px;
+            margin: 30px 50px;
             .title_info{
                 font-size: 25px;
-                margin: 20px;
+                margin: 10px 20px;
             }
         }
         .img{
             height: 250px;
             margin: 50px;
         }
+    }
+
+    .a{
+      text-decoration: none;
+      position: absolute;
+      left : 67%;
+      top: 80%;
+      transform: translate( -50%,-50%) ;
+      font-size: 30px;
+      background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+      background-size:300%;
+      width:250px;
+      height : 70px;
+      line-height: 70px;
+      text-align: center;
+      color :#fff ;
+      text-transform: uppercase;
+      border-radius : 25px;
+      z-index: 2;
+    }
+
+    a::before{
+      content: '';
+      position: absolute;
+      left: -3px;
+      right: -3px;
+      top: -3px;
+      bottom: -3px;
+      background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+      background-size:300%;
+      border-radius : 25px;
+      filter: blur(20px);
+      z-index: -1;
+    }
+
+    .a:hover{
+      animation: buttonlight 8s infinite ;
+    }
+    .a:hover::before{
+      animation: buttonlight 8s infinite ;
+    }
+
+    @keyframes buttonlight {
+      100%{
+        background-position: -300% 0;
+      }
     }
 
 

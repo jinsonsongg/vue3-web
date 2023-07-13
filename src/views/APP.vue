@@ -1,16 +1,16 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import navbar from './views/nav2.vue';
-import footerin from './views/footer.vue';
-import carousel from './views/carousel.vue';
-import product from './views/ProductIntroduction.vue'
-import moreapps from './views/moreapps.vue';
+import { RouterLink, RouterView } from 'vue-router';
+import navbar from './nav2.vue';
+import footerin from './footer.vue';
+import carousel from './carousel.vue';
+import product from './ProductIntroduction.vue';
+import moreapps from './moreapps.vue';
 
 </script>
 
 <template>
-  <router-view />
-  <!-- <div class="common-layout">
+  <RouterView>
+  <div class="common-layout">
     <el-container>
       <header class="header">
         <navbar/>
@@ -39,7 +39,8 @@ import moreapps from './views/moreapps.vue';
     >
       UP
     </div>
-  </el-backtop> -->
+  </el-backtop>
+</RouterView>
 </template>
 
 <style scoped>
