@@ -13,16 +13,16 @@
             <el-menu-item index="/">首页</el-menu-item>
             <el-sub-menu index="1">
                 <template #title>公司业务</template>
-                    <el-menu-item index="1-1">业务1</el-menu-item>
-                    <el-menu-item index="1-2">业务2</el-menu-item>
-                    <el-menu-item index="1-3">业务3</el-menu-item>
+                    <el-menu-item index="1-1" :route="{ path: 'business1' }">业务1</el-menu-item>
+                    <el-menu-item index="1-2" :route="{ path: 'business2' }">业务2</el-menu-item>
+                    <el-menu-item index="1-3" :route="{ path: 'business3' }">业务3</el-menu-item>
             </el-sub-menu>
                 <el-menu-item index="2" :route="{ path: 'news' }">新闻动态</el-menu-item>
-                <el-menu-item index="3">解决方案</el-menu-item>
+                <el-menu-item index="3" :route="{ path: 'solution' }">解决方案</el-menu-item>
             <el-sub-menu index="4">
                 <template #title>关于我们</template>
-                    <el-menu-item index="4-1">公司概况</el-menu-item>
-                    <el-menu-item index="4-2">企业文化</el-menu-item>
+                    <el-menu-item index="4-1" :route="{ path: 'overview' }">公司概况</el-menu-item>
+                    <el-menu-item index="4-2" :route="{ path: 'culture' }">企业文化</el-menu-item>
             </el-sub-menu>
             <el-sub-menu index="5">
                 <template #title>加入我们</template>

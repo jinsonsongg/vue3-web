@@ -1,13 +1,38 @@
 <template>
-    <div class="nav2" style="height: 80px;"/>
-    <div class="title">
-        联系我们
+    <div>
+        <div class="nav2" style="height: 80px;" />
+        <div class="a">
+            <img src="" alt="" class="img">
+            <div class="title">联系我们</div>
         </div>
+        <div class="b">
+            <div>内容</div>
+
+
+
+
+        </div>
+    </div>
 </template>
 <style scoped>
-.title{
-    font-size: 50px;
-    font-family: PMZDBTT;
+.a{
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/bj1.jpg'); 
+    background-repeat:no-repeat;
+    background-size:100%;  
+    display: flex;
+    .img{
+        width: 500px;
+        height: 300px;
+        margin: 60px 170px;
+    }
+    .title{
+        font-size: 80px;
+        
+        font-family: PMZDBTT;
+        margin-top: 140px;
+    }
 }
 </style>
 <script setup>

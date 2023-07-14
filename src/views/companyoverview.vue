@@ -2,8 +2,8 @@
     <div>
         <div class="nav2" style="height: 80px;" />
         <div class="a">
-            <img src="../img/problem.png" alt="" class="img">
-            <div class="title">招聘信息</div>
+            <img src="../img/win.png" alt="" class="img">
+            <div class="title">公司概况</div>
         </div>
         <div class="b">
             <div>
