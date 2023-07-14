@@ -9,11 +9,11 @@ import moreapps from './moreapps.vue';
 </script>
 
 <template>
-  <RouterView>
+  <!-- <RouterView> -->
   <div class="common-layout">
     <el-container>
       <header class="header">
-        <navbar/>
+        <!-- <navbar/> -->
       </header>
       <main class="main">
         <carousel/>
@@ -25,22 +25,8 @@ import moreapps from './moreapps.vue';
       </el-footer>
     </el-container>
   </div>
-  <el-backtop :bottom="100">
-    <div
-      style="
-        height: 100%;
-        width: 100%;
-        background-color: var(--el-bg-color-overlay);
-        box-shadow: var(--el-box-shadow-lighter);
-        text-align: center;
-        line-height: 40px;
-        color: #1989fa;
-      "
-    >
-      UP
-    </div>
-  </el-backtop>
-</RouterView>
+  
+<!-- </RouterView> -->
 </template>
 
 <style scoped>

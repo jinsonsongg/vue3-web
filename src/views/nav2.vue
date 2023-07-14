@@ -26,8 +26,8 @@
             </el-sub-menu>
             <el-sub-menu index="5">
                 <template #title>加入我们</template>
-                    <el-menu-item index="5-1">招聘信息</el-menu-item>
-                    <el-menu-item index="5-2">联系我们</el-menu-item>
+                    <el-menu-item index="5-1" :route="{ path: 'joinmsg' }">招聘信息</el-menu-item>
+                    <el-menu-item index="5-2" :route="{ path: 'contactus' }">联系我们</el-menu-item>
             </el-sub-menu>
         
       </el-menu>
