@@ -9,7 +9,7 @@ git clone http://192.168.1.110/jin_song/website.git
 ```
 ||
 ```
-git clone 
+git clone https://github.com/jinsonsongg/vue3-web.git
 ```
 
 
