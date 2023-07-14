@@ -8,8 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "coordtransform": "^2.1.2",
     "element-plus": "^2.3.7",
     "vue": "^3.3.4",
+    "vue-amap": "^0.5.10",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {

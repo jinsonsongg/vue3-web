@@ -4,3 +4,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'DIGII';
+    src: url('./DS-DIGII.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
