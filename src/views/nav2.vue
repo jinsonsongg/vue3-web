@@ -29,7 +29,16 @@
                     <el-menu-item index="5-1" :route="{ path: 'joinmsg' }">招聘信息</el-menu-item>
                     <el-menu-item index="5-2" :route="{ path: 'contactus' }">联系我们</el-menu-item>
             </el-sub-menu>
+            
+              <el-sub-menu>
+                <template #title>语言</template>
+                <el-menu-item>简体中文</el-menu-item>
+                <el-menu-item>English</el-menu-item>
+                <el-menu-item>^*KBH^@I#</el-menu-item>
+              </el-sub-menu>
+            
         
+         
       </el-menu>
     </div>
   </template>

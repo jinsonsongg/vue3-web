@@ -5,6 +5,7 @@ import footerin from './footer.vue';
 import carousel from './carousel.vue';
 import product from './ProductIntroduction.vue';
 import moreapps from './moreapps.vue';
+import aboutus from './aboutus.vue';
 
 </script>
 
@@ -17,6 +18,7 @@ import moreapps from './moreapps.vue';
       </header>
       <main class="main">
         <carousel/>
+        <aboutus/>
         <product/>
         <moreapps/>
         </main>
