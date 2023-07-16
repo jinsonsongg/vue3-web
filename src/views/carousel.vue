@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel">
+  <div class="carousel wow animate__rotateInUpLeft">
     <el-carousel class="carousel_size" :interval="0">
       <el-carousel-item class="bigrb">
         <div class="rb rb1">
@@ -134,4 +134,21 @@ a::before {
   height: 100%;
 }
 </style>
+<script setup>
+import {ref , onMounted} from 'vue'
+
+
+import WOW from "wow.js";
+ 
+onMounted(async () => {
+  let wow = new WOW({
+    boxClass: 'wow',    //需要执行动画元素的Class
+	animateClass: 'animated',    //animation.css动画的Class
+	offset: 0,    //距离可视区域多少开始执行动画
+	mobile: true,    //是否在移动设备执行动画
+	live: true    //异步加载的内容是否有效
+  });
+  wow.init();
+});
+</script>
   

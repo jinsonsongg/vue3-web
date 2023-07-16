@@ -8,23 +8,23 @@
         <div class="b">
             <div>
                 <div class="content">
-                    <h3 class="h3">福建昊钺科技有限公司</h3>
-                    <p class="p">————致力于物联网产品的开发</p>
+                    <h3 class="h3 wow animate__bounceInDown" >福建昊钺科技有限公司</h3>
+                    <p class="p wow animate__bounceInLeft">————致力于物联网产品的开发</p>
                 </div>
                 <div class="parallax p1"></div>
                 <div class="content">
-                    <h3 class="h3">良好的工作环境</h3>
-                    <p class="p">————自强不息</p>
+                    <h3 class="h3  wow animate__bounceInDown">良好的工作环境</h3>
+                    <p class="p  wow animate__bounceInLeft">————自强不息</p>
                 </div>
                 <div class="parallax p2"></div>
                 <div class="content">
-                    <h3 class="h3">热烈的工作氛围</h3>
-                    <p class="p">————齐心协力</p>
+                    <h3 class="h3  wow animate__bounceInDown">热烈的工作氛围</h3>
+                    <p class="p wow animate__bounceInLeft">————齐心协力</p>
                 </div>
                 <div class="parallax p3"></div>
                 <div class="content">
-                    <h3 class="h3">没文案了</h3>
-                    <p class="p">————还有一些</p>
+                    <h3 class="h3  wow animate__bounceInDown">没文案了</h3>
+                    <p class="p  wow animate__bounceInLeft">————还有一些</p>
                 </div>
                 <div class="parallax p4"></div>
                 <!-- <div class="content"></div> -->

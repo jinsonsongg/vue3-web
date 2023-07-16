@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="titlediv">
+    <div class="titlediv wow animate__jackInTheBox">
       <div class="title">成熟的产品体系</div>
       <hr class="hr">
       <div class="tilieinfo">聚焦行业热点，解决智慧管理难题</div>
     </div>
     <div class="product">
       <div class="carddiv">
-        <el-card class="card"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="1s" >
           <img src="../img/img_1.png"
             class="image" />
           <div >
@@ -24,7 +24,7 @@
         </el-card>
 
 
-        <el-card class="card"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="1s"  >
           <img src="../img/img_2.png"
             class="image" />
           <div >
@@ -39,7 +39,7 @@
             </div>
           </div>
         </el-card>
-        <el-card class="card"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="1s"  >
           <img src="../img/img_3.png"
             class="image" />
           <div >
@@ -57,7 +57,7 @@
       </div>
         <div class="carddiv">
 
-        <el-card class="card">
+        <el-card class="card wow animate__flipInY"  data-wow-delay="1s">
           <img src="../img/img_4.png"
             class="image" />
           <div >
@@ -72,7 +72,7 @@
             </div>
           </div>
         </el-card>
-        <el-card class="card"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="1s"  >
           <img src="../img/img_5.png"
             class="image" />
           <div >
@@ -87,7 +87,7 @@
             </div>
           </div>
         </el-card>
-        <el-card class="card"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="1s"  >
           <img src="../img/img_6.png"
             class="image" />
           <div >

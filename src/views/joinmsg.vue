@@ -7,21 +7,20 @@
         </div>
         <div class="b">
             <div>
-                <h1 style="text-align: center; margin-top: 50px;">详细信息</h1>
+                <h1 style="text-align: center; margin-top: 50px;" class="wow animate__bounceInUp">详细信息</h1>
                 <div class="info">
-                    <el-card class="box-card gzsj">
+                    <el-card class="box-card gzsj wow animate__lightSpeedInRight" data-wow-delay="0.5s">
                         <template #header>
                             <div class="card-header">
-                                <h4 class="h4">工作时间:</h4>
+                                <h4 class="h4 ">工作时间:</h4>
                             </div>
                         </template>
                         <div>
-
                             上午09:00 - 下午06:00</div>
                         <br>
                         <div>双休、偶尔加班</div>
                     </el-card>
-                    <el-card class="box-card treatment">
+                    <el-card class="box-card treatment wow animate__zoomIn" data-wow-delay="0.5s">
                         <template #header>
                             <div class="card-header">
                                 <h4 class="h4">待遇</h4>
@@ -44,7 +43,7 @@
                             <span>&nbsp;&nbsp;.&nbsp;.&nbsp;.</span>
                         </div>
                     </el-card>
-                    <el-card class="img">
+                    <el-card class="img wow animate__lightSpeedInLeft" data-wow-delay="0.5s">
                         <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
                             class="image" />
                     </el-card>
@@ -99,7 +98,7 @@
                                     </ul>
                                 </div>
                             </el-collapse-item>
-                            
+
                             <el-collapse-item name="2">
                                 <template #title>
                                     <h2 class="h2">总经理助理</h2>

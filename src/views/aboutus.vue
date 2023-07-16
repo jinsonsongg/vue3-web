@@ -1,12 +1,12 @@
 <template>
     <div class="boby">
         <div>
-            <img src="../img/lou.jpg" alt="" class="img">
+            <img src="../img/lou.jpg" alt="" class="img wow animate__backInLeft">
         </div>
         <div class="title">
-            <h1 class="h1">福建昊钺科技有限公司</h1>
+            <h1 class="h1 wow animate__zoomInDown "   data-wow-delay="1s"  >福建昊钺科技有限公司</h1>
 
-            <div class="msg">
+            <div class="msg wow animate__bounceInRight">
                 <h3 class="h3">公司简介:</h3>
 
                 <h5 class="h5">福建昊钺科技成立于2019年，公司位于福州国家高新区，
@@ -56,4 +56,19 @@
 }
 </style>
 <script setup>
+import {ref , onMounted} from 'vue'
+
+
+import WOW from "wow.js";
+ 
+onMounted(async () => {
+  let wow = new WOW({
+    boxClass: 'wow',    //需要执行动画元素的Class
+	animateClass: 'animated',    //animation.css动画的Class
+	offset: 0,    //距离可视区域多少开始执行动画
+	mobile: true,    //是否在移动设备执行动画
+	live: true    //异步加载的内容是否有效
+  });
+  wow.init();
+});
 </script>

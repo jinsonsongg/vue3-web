@@ -1,24 +1,26 @@
 {
-  "name": "vue3-web",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@amap/amap-jsapi-loader": "^1.0.1",
-    "@element-plus/icons-vue": "^2.1.0",
-    "coordtransform": "^2.1.2",
-    "element-plus": "^2.3.7",
-    "vue": "^3.3.4",
-    "vue-amap": "^0.5.10",
-    "vue-router": "^4.2.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.3",
-    "less": "^4.1.3",
-    "vite": "^4.3.9"
-  }
+    "name": "vue3-web",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@amap/amap-jsapi-loader": "^1.0.1",
+        "@element-plus/icons-vue": "^2.1.0",
+        "animate.css": "^4.1.1",
+        "coordtransform": "^2.1.2",
+        "element-plus": "^2.3.7",
+        "vue": "^3.3.4",
+        "vue-amap": "^0.5.10",
+        "vue-router": "^4.2.2",
+        "wow.js": "^1.2.2"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.2.3",
+        "less": "^4.1.3",
+        "vite": "^4.3.9"
+    }
 }

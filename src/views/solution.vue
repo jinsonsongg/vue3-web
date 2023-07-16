@@ -1,71 +1,111 @@
 <template>
-    <div>
-        <div class="nav2" style="height: 80px;" />
-        <div class="a">
-            <img src="../img/fix.png" alt="" class="img">
-            <div class="title">解决方案</div>
-        </div>
-        <div class="b">
-            <div >
-                <h1>我们解决的问题</h1>
-                <div class="num">a  {{ num.a }}</div>
-                <div class="num">b  {{ num.b }}</div>
-                <div class="num">c  {{ num.c }}</div>
-            </div>
-        </div>
+  <div>
+    <div class="nav2" style="height: 80px;" />
+    <div class="a">
+      <img src="../img/fix.png" alt="" class="img">
+      <div class="title">解决方案</div>
     </div>
+    <div class="b">
+      <div class="tu">
+        <img src="../img/nobug.png" alt="" class="img wow animate__rollIn">
+      </div>
+      <div style="margin: -40px 0 0 0;">
+        <!-- <h1>我们解决的问题</h1> -->
+        <div ><h3>制作的程序</h3><div class="num">{{ num.a }}</div> </div>
+        <div ><h3>编写的代码</h3><div class="num">{{ num.b }}</div> </div>
+        <div ><h3>解决的报错</h3><div class="num">{{ num.c }}</div></div>
+      </div>
+
+    </div>
+    <div class="b">
+      <div>
+        <h1>有bug？</h1>
+        <div class="m20">欢迎反馈:</div>
+        <div class="m20" ><el-input v-model="textarea" :rows="5" type="textarea"  resize='none' placeholder="请输入你遇到的问题" class="input"/>
+          <br>
+          <el-button class="m20" @click="up"> 提交</el-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footerin />
 </template>
 <style scoped>
 .a {
-    width: 100%;
-    height: 400px;
-    background-image: url('../img/bj1.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
+  width: 100%;
+  height: 400px;
+  background-image: url('../img/bj1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
 
-    .img {
-        width: 500px;
-        height: 300px;
-        margin: 60px 170px;
-    }
+  .img {
+    width: 500px;
+    height: 300px;
+    margin: 60px 170px;
+  }
 
-    .title {
-        font-size: 80px;
+  .title {
+    font-size: 80px;
 
-        font-family: PMZDBTT;
-        margin-top: 140px;
-    }
+    font-family: PMZDBTT;
+    margin-top: 140px;
+  }
 }
 
-.b{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    .num{
-        font-size: 35px;
-        font-family: DIGII;
+.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 5px 0 50px 0;
+
+  .num {
+    font-size: 35px;
+    font-family: DIGII;
+    margin: -5px;
+  }
+
+  .tu {
+    margin: 50px;
+
+    .img {
+      width: 250px;
+      height: 250px;
+      margin: 20px 25px 20px -150px;
     }
+  }
+
+  .input{
+    width: 600px;
+  }
+  .m20{
+    margin: 20px;
+  }
 }
 </style>
 <script setup>
+/**********组件*********** */
+import footerin from './footer.vue'
 /*******样式******** */
 import '../assets/font/font.css'
 /********vue********* */
 import { ref, onMounted, watch } from 'vue';
 
 /*********变量***** */
+
+const textarea = ref('')
+
 const list = ref({
-    a:3,
-    b:596858455,
-    c:98134
+  a: 3,
+  b: 596858455,
+  c: 98134
 })
 
 const num = ref({
-    a:0,
-    b:0,
-    c:0,
+  a: 0,
+  b: 0,
+  c: 0,
 })
 /**********方法********* */
 
@@ -101,9 +141,16 @@ const updateNum = () => {
     increaseNumValue();
   });
   setTimeout(() => {
-    num.value=list.value
+    num.value = list.value
   }, 3010);
 };
+
+
+function up(){
+  alert(textarea.value);
+  textarea.value=null;
+}
+
 
 
 onMounted(() => {

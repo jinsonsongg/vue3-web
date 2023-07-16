@@ -13,7 +13,7 @@ const router = createRouter({
             path: '/business1',
             name: 'business1',
             component: () =>
-                import ('../views/news.vue')
+                import ('../views/yihu.vue')
         }, { //业务二1-2
             path: '/business2',
             name: 'business2',
