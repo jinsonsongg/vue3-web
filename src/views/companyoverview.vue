@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="nav2" style="height: 80px;" />
-        <div class="a">
+        <div class="a wow animate__jello">
             <img src="../img/win.png" alt="" class="img">
             <div class="title">公司概况</div>
         </div>

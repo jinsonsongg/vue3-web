@@ -11,7 +11,7 @@
               房屋租赁、园区招商、物业客户服务等管理赋能</div>
           </div>
         </div>
-        <a href="" class="a"><span>点击预览</span></a>
+        <a href="" class="rainbow">点击预览</a>
       </el-carousel-item>
       <el-carousel-item>
         <div class="rb rb2">
@@ -64,7 +64,10 @@
   }
 }
 
-.a {
+
+
+
+.rainbow {
   text-decoration: none;
   position: absolute;
   left: 67%;
@@ -97,11 +100,11 @@ a::before {
   z-index: -1;
 }
 
-.a:hover {
+.rainbow:hover {
   animation: buttonlight 8s infinite;
 }
 
-.a:hover::before {
+.rainbow:hover::before {
   animation: buttonlight 8s infinite;
 }
 

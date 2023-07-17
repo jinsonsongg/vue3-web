@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="nav2" style="height: 80px;" />
-        <div class="a">
+        <div class="a wow animate__jello">
             <img src="../img/problem.png" alt="" class="img">
             <div class="title">招聘信息</div>
         </div>
@@ -9,7 +9,7 @@
             <div>
                 <h1 style="text-align: center; margin-top: 50px;" class="wow animate__bounceInUp">详细信息</h1>
                 <div class="info">
-                    <el-card class="box-card gzsj wow animate__lightSpeedInRight" data-wow-delay="0.5s">
+                    <el-card class="box-card gzsj wow animate__lightSpeedInRight" data-wow-delay="0.3s">
                         <template #header>
                             <div class="card-header">
                                 <h4 class="h4 ">工作时间:</h4>
@@ -43,7 +43,7 @@
                             <span>&nbsp;&nbsp;.&nbsp;.&nbsp;.</span>
                         </div>
                     </el-card>
-                    <el-card class="img wow animate__lightSpeedInLeft" data-wow-delay="0.5s">
+                    <el-card class="img wow animate__lightSpeedInLeft" data-wow-delay="0.3s">
                         <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
                             class="image" />
                     </el-card>

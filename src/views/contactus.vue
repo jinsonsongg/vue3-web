@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="nav2" style="height: 80px;" />
-        <div class="a">
+        <div class="a wow animate__jello">
             <img src="../img/diwei.png" alt="" class="img">
             <div class="title">联系我们</div>
         </div>

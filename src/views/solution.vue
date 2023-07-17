@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="nav2" style="height: 80px;" />
-    <div class="a">
+    <div class="a wow animate__jello">
       <img src="../img/fix.png" alt="" class="img">
       <div class="title">解决方案</div>
     </div>
@@ -26,6 +26,10 @@
           <el-button class="m20" @click="up"> 提交</el-button>
         </div>
       </div>
+    </div>
+
+    <div class="bofankuan">
+      播放框
     </div>
   </div>
   <footerin />

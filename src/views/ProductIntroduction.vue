@@ -7,7 +7,7 @@
     </div>
     <div class="product">
       <div class="carddiv">
-        <el-card class="card wow animate__flipInY"  data-wow-delay="1s" >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="0.5s" >
           <img src="../img/img_1.png"
             class="image" />
           <div >
@@ -24,7 +24,7 @@
         </el-card>
 
 
-        <el-card class="card wow animate__flipInY"  data-wow-delay="1s"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="0.7s"  >
           <img src="../img/img_2.png"
             class="image" />
           <div >
@@ -39,7 +39,7 @@
             </div>
           </div>
         </el-card>
-        <el-card class="card wow animate__flipInY"  data-wow-delay="1s"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="0.9s"  >
           <img src="../img/img_3.png"
             class="image" />
           <div >
@@ -57,7 +57,7 @@
       </div>
         <div class="carddiv">
 
-        <el-card class="card wow animate__flipInY"  data-wow-delay="1s">
+        <el-card class="card wow animate__flipInY"  data-wow-delay="0.6s">
           <img src="../img/img_4.png"
             class="image" />
           <div >
@@ -72,7 +72,7 @@
             </div>
           </div>
         </el-card>
-        <el-card class="card wow animate__flipInY"  data-wow-delay="1s"  >
+        <el-card class="card wow animate__flipInY"  data-wow-delay="0.8s"  >
           <img src="../img/img_5.png"
             class="image" />
           <div >
