@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="nav2" style="height: 80px;" />
-        <div class="a wow animate__jello">
+        <div class="a wow animate__fadeInTopRight">
             <img src="../img/win.png" alt="" class="img">
             <div class="title">公司概况</div>
         </div>
@@ -27,7 +27,7 @@
                     <p class="p  wow animate__bounceInLeft">————还有一些</p>
                 </div>
                 <div class="parallax p4"></div>
-                <!-- <div class="content"></div> -->
+                <!-- <div class="content">来一滚动</div> -->
             </div>
         </div>
     </div>

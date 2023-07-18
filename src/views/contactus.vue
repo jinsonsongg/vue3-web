@@ -1,13 +1,13 @@
 <template>
     <div>
         <div class="nav2" style="height: 80px;" />
-        <div class="a wow animate__jello">
+        <div class="a wow animate__fadeInUp">
             <img src="../img/diwei.png" alt="" class="img">
             <div class="title">联系我们</div>
         </div>
         <div class="b">
             <div class="ditu">
-                <gaode class="gaode" />
+                <gaode class="gaode wow animate__zoomIn " data-wow-delay="0.5s" />
             </div>
             <div class="companyinfo">
                 <div class="info">地址：</div>

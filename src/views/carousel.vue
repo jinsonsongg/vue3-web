@@ -13,7 +13,7 @@
         </div>
         <a href="" class="rainbow">点击预览</a>
       </el-carousel-item>
-      <el-carousel-item>
+      <el-carousel-item  class="bigrb">
         <div class="rb rb2">
           <img class="img" src="../img/undraw_world_re_768g.svg" alt="">
           <div class="title">智能物联
@@ -21,16 +21,29 @@
             <div class="title_info">信息化系统与硬件无缝对接，开启智慧管理模式</div>
           </div>
         </div>
+        <a href="" class="rainbow">点击预览</a>
       </el-carousel-item>
-      <el-carousel-item>
-        <div class="rb rb3">
-          <span>hi~ hi~ </span>
+      <el-carousel-item class="bigrb">
+        <div class="rb rb1">
+          <img class="img" src="../img/undraw_connecting_teams_re_hno7.svg" alt="">
+          <div class="title">智慧物业管理系统
+            <div class="title_info">
+              用数字化技术为物业收费</div>
+            <div class="title_info">
+              房屋租赁、园区招商、物业客户服务等管理赋能</div>
+          </div>
         </div>
+        <a href="" class="rainbow">点击预览</a>
       </el-carousel-item>
-      <el-carousel-item>
-        <div class="rb rb4">
-          <span>hi~ hi~ </span>
+      <el-carousel-item  class="bigrb">
+        <div class="rb rb2">
+          <img class="img" src="../img/undraw_in_the_office_re_jtgc.svg" alt="">
+          <div class="title">智能物联
+            <div class="title_info">软硬件一体化解决方案，提升社区安全和用户体验</div>
+            <div class="title_info">信息化系统与硬件无缝对接，开启智慧管理模式</div>
+          </div>
         </div>
+        <a href="" class="rainbow">点击预览</a>
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -138,18 +151,18 @@ a::before {
 }
 </style>
 <script setup>
-import {ref , onMounted} from 'vue'
+import { ref, onMounted } from 'vue'
 
 
 import WOW from "wow.js";
- 
+
 onMounted(async () => {
   let wow = new WOW({
     boxClass: 'wow',    //需要执行动画元素的Class
-	animateClass: 'animated',    //animation.css动画的Class
-	offset: 0,    //距离可视区域多少开始执行动画
-	mobile: true,    //是否在移动设备执行动画
-	live: true    //异步加载的内容是否有效
+    animateClass: 'animated',    //animation.css动画的Class
+    offset: 0,    //距离可视区域多少开始执行动画
+    mobile: true,    //是否在移动设备执行动画
+    live: true    //异步加载的内容是否有效
   });
   wow.init();
 });

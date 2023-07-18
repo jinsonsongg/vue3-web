@@ -129,7 +129,7 @@ function choosenews(newtpye) {
     <div>
         <!-- <nav2/> -->
         <div class="nav2" style="height: 80px;" />
-        <div class="a wow animate__jello">
+        <div class="a wow animate__fadeInDown">
             <img class="titleimg" src="../img/Meeting.png" alt="">
             <div class="title">公司要闻</div>
         </div>

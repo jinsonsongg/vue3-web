@@ -5,7 +5,7 @@
             <img src="../img/yihu.png" alt="" class="img">
             <div class="title">护工服务系统</div>
         </div>
-        <div class="b">
+        <div class="b" v-if="false">
 
             <div>
                 <h1>一款针对医院的护理关照系统</h1>
@@ -36,6 +36,50 @@
             <div style="height: 500px;"></div>
 
         </div>
+        <div style="text-align:center ;margin: 50px 0 -100px 0;">
+            <h1>我们产品的特点</h1>
+        </div>
+        <div class="characteristic">
+
+            <div class="trait">
+                <img class="img" src="../img/yihu1.png" alt="">
+
+            </div>
+            <div class="trait">
+                <img class="img" src="../img/yihu2.png" alt="">
+
+            </div>
+            <div class="trait">
+                <img class="img" style="height: 250px;" src="../img/yihu3.png" alt="">
+
+            </div>
+            <div class="trait">
+                <img class="img" style="width: 250px; height: 250px;" src="../img/yihu4.png" alt="">
+
+            </div>
+            <div class="trait">
+                <img class="img" src="../img/yihu5.png" alt="">
+
+            </div>
+
+        </div>
+        
+        <div class="AvailableScenarios">
+            
+        <h1>可用场景</h1>
+            <img class="img" src="../img/病床白.png" alt="">
+        </div>
+        <div class="Productadvantages">
+            <h1>产品优势</h1> 
+
+            <div>我们的优势...</div>
+        </div>
+        <div class="video">
+            <h1>视频</h1> 
+
+            <div class="videodiv">
+            <div id="mse" class="Player" ></div></div>
+        </div>
         <footerin />
     </div>
 </template>
@@ -43,7 +87,7 @@
 .a {
     width: 100%;
     height: 400px;
-    background-image: url('../img/bj1.jpg');
+    background-image: url('../img/bj3.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -69,19 +113,76 @@
 }
 
 .el-carousel__item h3 {
-  color: #475669;
-  opacity: 0.75;
-  line-height: 200px;
-  margin: 0;
-  text-align: center;
+    color: #475669;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+    text-align: center;
 }
 
 .el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
+    background-color: #99a9bf;
 }
 
 .el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
+    background-color: #d3dce6;
+}
+
+.characteristic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    .trait {
+        margin: 50px;
+        margin-left: -1%;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        /* border: 1px palegreen solid; */
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.AvailableScenarios{
+    width: 100%;
+    height: 400px;
+    /* margin: 50px; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .img{
+        width: 50%;
+    }
+}
+.Productadvantages{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .videodiv{
+        width: 800px;
+    }
+    
 }
 </style>
 <script setup>
@@ -94,6 +195,8 @@ import { ref, onMounted } from 'vue'
 
 /**********插件********** */
 import WOW from "wow.js";
+import Player from 'xgplayer';
+import 'xgplayer/dist/index.min.css';
 
 /*********常量********** */
 
@@ -118,5 +221,21 @@ onMounted(async () => {
         live: true    //异步加载的内容是否有效
     });
     wow.init();
+    startplayvideo();
 });
+
+
+function startplayvideo(){
+  let player = new Player({
+  id: 'mse',
+  url: 'http://s2.pstatp.com/cdn/expire-1-M/byted-player-videos/1.0.0/xgplayer-demo.mp4',
+  download: true,
+  fluid: true,
+  fitVideoSize: 'auto', 
+});
+}
+
+// onMounted(()=>{
+//   startplayvideo();
+// })
 </script>

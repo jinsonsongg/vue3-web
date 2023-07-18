@@ -13,9 +13,9 @@
             <el-menu-item index="/">首页</el-menu-item>
             <el-sub-menu index="1">
                 <template #title>公司业务</template>
-                    <el-menu-item index="1-1" :route="{ path: 'business1' }">业务1</el-menu-item>
-                    <el-menu-item index="1-2" :route="{ path: 'business2' }">业务2</el-menu-item>
-                    <el-menu-item index="1-3" :route="{ path: 'business3' }">业务3</el-menu-item>
+                    <el-menu-item index="1-1" :route="{ path: 'business1' }">护工系统</el-menu-item>
+                    <el-menu-item index="1-2" :route="{ path: 'business2' }">业务2(未制作)</el-menu-item>
+                    <el-menu-item index="1-3" :route="{ path: 'business3' }">业务3(未制作)</el-menu-item>
             </el-sub-menu>
                 <el-menu-item index="2" :route="{ path: 'news' }">新闻动态</el-menu-item>
                 <el-menu-item index="3" :route="{ path: 'solution' }">解决方案</el-menu-item>
@@ -34,7 +34,7 @@
                 <template #title>语言</template>
                 <el-menu-item>简体中文</el-menu-item>
                 <el-menu-item>English</el-menu-item>
-                <el-menu-item>^*KBH^@I#</el-menu-item>
+                <el-menu-item>^*KbH^@I#</el-menu-item>
               </el-sub-menu>
             
         

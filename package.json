@@ -16,7 +16,8 @@
         "vue": "^3.3.4",
         "vue-amap": "^0.5.10",
         "vue-router": "^4.2.2",
-        "wow.js": "^1.2.2"
+        "wow.js": "^1.2.2",
+        "xgplayer": "^3.0.5"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^4.2.3",
