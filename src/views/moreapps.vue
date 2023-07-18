@@ -235,10 +235,10 @@
     font-size: 20px;
     transform: translateY(-100px);
 }
-
+/* 
 .shell .box:hover .content h2 {
-    /* transform: translateY(-15px); */
-}
+     transform: translateY(-15px); 
+} */
 
 .shell .box .content p {
     color: rgb(0, 0, 0);
