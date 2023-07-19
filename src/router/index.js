@@ -54,6 +54,24 @@ const router = createRouter({
             name: 'contactus',
             component: () =>
                 import ('../views/contactus.vue')
+        },
+        //英文页面路由  ******************************************************      
+        { //英文首页
+            path: '/enapp',
+            name: 'enapp',
+            component: () =>
+                import ('../enviews/APPEN.vue')
+        },
+        { //公司新闻（en）
+            path: '/ennews',
+            name: 'ennews',
+            component: () =>
+                import ('../enviews/news.vue')
+        }, { //公司概况4-1
+            path: '/enoverview',
+            name: 'enoverview',
+            component: () =>
+                import ('../enviews/companyoverview.vue')
         }
 
     ]

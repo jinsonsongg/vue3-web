@@ -10,28 +10,28 @@
       >
         <img src="../img/haoyue_logo_2.png" class="logo" />
         <div class="space"/>
-            <el-menu-item index="/">首页</el-menu-item>
+            <el-menu-item index="6-2" :route="{ path: 'enapp' }">Home</el-menu-item>
             <el-sub-menu index="1">
-                <template #title>公司业务</template>
-                    <el-menu-item index="1-1" :route="{ path: 'business1' }">护工系统</el-menu-item>
-                    <el-menu-item index="1-2" :route="{ path: 'business2' }">业务2(未制作)</el-menu-item>
-                    <el-menu-item index="1-3" :route="{ path: 'business3' }">业务3(未制作)</el-menu-item>
+                <template #title>Business</template>
+                    <el-menu-item index="1-1" :route="{ path: 'business1' }">Nursing system</el-menu-item>
+                    <el-menu-item index="1-2" :route="{ path: 'business2' }">Business2(not produced)</el-menu-item>
+                    <el-menu-item index="1-3" :route="{ path: 'business3' }">Business3(not produced)</el-menu-item>
             </el-sub-menu>
-                <el-menu-item index="2" :route="{ path: 'news' }">新闻动态</el-menu-item>
-                <el-menu-item index="3" :route="{ path: 'solution' }">解决方案</el-menu-item>
+                <el-menu-item index="2" :route="{ path: 'ennews' }">News</el-menu-item>
+                <el-menu-item index="3" :route="{ path: 'ennews' }">Solution</el-menu-item>
             <el-sub-menu index="4">
-                <template #title>关于我们</template>
-                    <el-menu-item index="4-1" :route="{ path: 'overview' }">公司概况</el-menu-item>
-                    <el-menu-item index="4-2" :route="{ path: 'culture' }">企业文化</el-menu-item>
+                <template #title>About us</template>
+                    <el-menu-item index="4-1" :route="{ path: 'enoverview' }">Company Overview</el-menu-item>
+                    <el-menu-item index="4-2" :route="{ path: 'enoverview' }">Corporate Culture</el-menu-item>
             </el-sub-menu>
             <el-sub-menu index="5">
-                <template #title>加入我们</template>
-                    <el-menu-item index="5-1" :route="{ path: 'joinmsg' }">招聘信息</el-menu-item>
-                    <el-menu-item index="5-2" :route="{ path: 'contactus' }">联系我们</el-menu-item>
+                <template #title>Join us</template>
+                    <el-menu-item index="5-1" :route="{ path: 'joinmsg' }">job Message</el-menu-item>
+                    <el-menu-item index="5-2" :route="{ path: 'contactus' }">Contact Us</el-menu-item>
             </el-sub-menu>
             
               <el-sub-menu>
-                <template #title>语言</template>
+                <template #title>Language</template>
                 <el-menu-item index="/" >简体中文</el-menu-item>
                 <el-menu-item index="6-2" :route="{ path: 'enapp' }">English</el-menu-item>
                 <el-menu-item @click="crazy">^*KbH^@I#</el-menu-item>
