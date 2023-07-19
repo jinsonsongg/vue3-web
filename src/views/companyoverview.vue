@@ -57,7 +57,6 @@
 }
 
 .b{
-
     .parallax{
         width: 100%;
         height: 100vh;
@@ -97,17 +96,12 @@
         font-size: 16px;
         line-height: 28px;
     }
-    /* .h4{
-        font-size: 45px;
-        letter-spacing: 10px;
-        text-align: center;
-        color: rgb(170, 130, 251);
-        font-weight: 400;
-        top: 500px;
-    } */
 }
 </style>
 <script setup>
+/*********样式********* */
 import '../assets/font/font.css'
+
+/**********组件********** */
 import footerin from './footer.vue';
 </script>

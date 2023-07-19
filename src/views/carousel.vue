@@ -77,9 +77,6 @@
   }
 }
 
-
-
-
 .rainbow {
   text-decoration: none;
   position: absolute;
@@ -127,8 +124,6 @@ a::before {
   }
 }
 
-
-
 .carousel {
   background-image: url('../img/bj2.jpg');
   background-size: cover;
@@ -138,8 +133,6 @@ a::before {
     height: 400px;
   }
 }
-
-
 
 .el-carousel__item h3 {
   color: #ffffff00;
@@ -151,11 +144,13 @@ a::before {
 }
 </style>
 <script setup>
+/**********vue********* */
 import { ref, onMounted } from 'vue'
 
-
+/**********插件***********/
 import WOW from "wow.js";
 
+/**********方法初始化************ */
 onMounted(async () => {
   let wow = new WOW({
     boxClass: 'wow',    //需要执行动画元素的Class

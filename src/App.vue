@@ -1,48 +1,16 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 import navbar from './views/nav2.vue';
-import footerin from './views/footer.vue';
-import carousel from './views/carousel.vue';
-import product from './views/ProductIntroduction.vue'
-import moreapps from './views/moreapps.vue';
+// import footerin from './views/footer.vue';
+// import carousel from './views/carousel.vue';
+// import product from './views/ProductIntroduction.vue'
+// import moreapps from './views/moreapps.vue';
 
 </script>
 
 <template>
   <navbar/>
-
   <router-view />
-  <!-- <div class="common-layout">
-    <el-container>
-      <header class="header">
-        <navbar/>
-      </header>
-      <main class="main">
-        <carousel/>
-        <product/>
-        <moreapps/>
-        </main>
-      <el-footer>
-        <footerin />
-      </el-footer>
-    </el-container>
-  </div>
-  <el-backtop :bottom="100">
-    <div
-      style="
-        height: 100%;
-        width: 100%;
-        background-color: var(--el-bg-color-overlay);
-        box-shadow: var(--el-box-shadow-lighter);
-        text-align: center;
-        line-height: 40px;
-        color: #1989fa;
-      "
-    >
-      UP
-    </div>
-  </el-backtop> -->
-  <!-- <footerin/> -->
   <el-backtop :bottom="100">
     <div
       style="
@@ -59,7 +27,6 @@ import moreapps from './views/moreapps.vue';
     </div>
   </el-backtop>
 </template>
-
 <style scoped>
 body{
   margin:0;
@@ -86,8 +53,6 @@ body{
 
 .main{
   width: 100%;
-  /* height: 600px; */
-  /* background-image: url("src/img/bj1.jpg"); */
 }
 
 </style>

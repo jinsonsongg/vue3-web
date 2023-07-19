@@ -44,7 +44,7 @@
                         </div>
                     </el-card>
                     <el-card class="img wow animate__lightSpeedInLeft" data-wow-delay="0.3s">
-                        <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+                        <img src="../img/tou.png"
                             class="image" />
                     </el-card>
                 </div>
@@ -76,7 +76,6 @@
                                             <li class="li">嵌入式/单片机开发经验</li>
                                         </ul>
                                     </div>
-
                                 </div>
                                 <div class="responsibility">
                                     <div class="jobtitle">职位职责</div>
@@ -217,7 +216,6 @@
                                             <li class="li">嵌入式/单片机开发经验</li>
                                         </ul>
                                     </div>
-
                                 </div>
                                 <div class="responsibility">
                                     <div class="jobtitle">职位职责</div>
@@ -239,12 +237,10 @@
                                     </ul>
                                 </div>
                             </el-collapse-item>
-
                         </el-collapse>
                     </div>
                 </div>
             </div>
-
         </div>
         <footerin />
     </div>
@@ -274,12 +270,9 @@
 
 .info {
     text-align: center;
-    /* width: 80%; */
     display: flex;
     justify-content: center;
-    /* 在主轴上居中对齐 */
     align-items: center;
-    /* background-color: aqua; */
     margin: 20px;
 
     .card-header {
@@ -287,12 +280,7 @@
         margin-top: -30px;
     }
 
-    /* .h4 {
-        padding: 10px;
-    } */
-
     .gzsj {
-        /* border: 2px solid black; */
         margin: 20px;
         height: 150px;
     }
@@ -343,7 +331,6 @@
 }
 
 .post {
-    /* height: 500px; */
     margin: 50px;
 
     .el-collapse {
@@ -373,8 +360,6 @@
         display: flex;
         align-items: center;
         gap: 10px;
-
-
 
         .jobrs1 {
             font-size: 15px;
@@ -415,6 +400,13 @@ ul {
 }
 </style>
 <script setup>
+/*********样式******** */
 import '../assets/font/font.css'
+/**********组件***********/
 import footerin from './footer.vue';
+/**********vue************/
+import {ref} from 'vue'
+
+/**********变量********** */
+const activeName = ref();
 </script>

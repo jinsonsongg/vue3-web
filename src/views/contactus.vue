@@ -12,13 +12,9 @@
             <div class="companyinfo">
                 <div class="info">地址：</div>
                 <div class="address">福州市闽侯县南屿镇后山村76号福建路政工贸工业园11号楼11层1108室</div>
-            
-                
                 <div class="email">邮箱: haoyuekeji@youxiang.com</div>
-
                 <div class="info">致电联系李先生</div>
                 <div class="phone">(+86) 136******62</div>
-                
                 <div class="info">关注我们微信号了解更多详情</div>
                 <div class="wx">
                     <img class="wximg" src="../img/weixin.png" alt="">
@@ -87,21 +83,21 @@
         }
     }
 }
-
-
 .ditu {
-
     .gaode {
         width: 1060px;
         height: 600px;
         margin: 50px 250px;
         text-align: center;
-
     }
 }
 </style>
 <script setup>
+
+/***********样式********** */
 import '../assets/font/font.css'
+
+/************组件*********** */
 import gaode from './gaode.vue'
 import footerin from './footer.vue';
 </script>

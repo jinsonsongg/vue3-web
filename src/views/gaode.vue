@@ -4,17 +4,17 @@
     </div>
 </template>
 <script setup>
-// 地图map
+/************插件************ */
 import AMapLoader from "@amap/amap-jsapi-loader"
-import { reactive, ref, onMounted, nextTick, defineProps } from 'vue';
-import { shallowRef } from '@vue/reactivity'
 
+/*************vue************* */
+import { reactive, ref, onMounted, nextTick } from 'vue';
+
+/*************常量*************** */
 window._AMapSecurityConfig = {
     securityJsCode: 'a4ed4ad1fccb7f49023dbd98d18be759', // 应用生成的秘钥
 }
 
-const searchValue = ref('')
-const lnglat = ref('')
 const state = reactive({
 
     map: null,
@@ -28,7 +28,7 @@ const state = reactive({
     },
 })
 
-
+/**********配置项************* */
 // 地图初始化
 function initMap(arr) {  // 参数为中心点经纬度坐标 
     AMapLoader.load({
@@ -61,6 +61,7 @@ function initMap(arr) {  // 参数为中心点经纬度坐标
         state.geoCoder = new AMap.Geocoder({
             city: '全国', // 默认：“全国”
             radius: 1000 // 范围，默认：500
+            
         })
 
         state.autoComplete = new AMap.AutoComplete({ city: '全国' });
@@ -78,17 +79,19 @@ function initMap(arr) {  // 参数为中心点经纬度坐标
     })
 }
 
+/*************方法***************/
+
 // 地图点击事件
-function clickMap(e) { // 点击地图事件
-    if (!e && !e.lnglat) {
-        return
-    }
-    state.form.lng = e.lnglat.lng
-    state.form.lat = e.lnglat.lat
-    regeocoder()
-    // removeMarker() // 先删除地图上标记点
-    setMapMarker() // 在添加新的标记点
-}
+// function clickMap(e) { // 点击地图事件
+//     if (!e && !e.lnglat) {
+//         return
+//     }
+//     state.form.lng = e.lnglat.lng
+//     state.form.lat = e.lnglat.lat
+//     regeocoder()
+//     // removeMarker() // 先删除地图上标记点
+//     setMapMarker() // 在添加新的标记点
+// }
 
 
 // 坐标转换
@@ -148,25 +151,26 @@ function toGetAddress() {
     })
 }
 
-function toGetCoordinate() {
-    let address = state.form.address
-    state.geocoder.getLocation(address, function (status, result) {
-        if (status === 'complete' && result.info === 'OK') {
-            initMap([result.geocodes[0].location.lng, result.geocodes[0].location.lat])
-            state.form.lng = result.geocodes[0].location.lng
-            state.form.lat = result.geocodes[0].location.lat
-            state.form.address = result.geocodes[0].formattedAddress
-        }
-    })
-    nextTick(function () {
-        removeMarker()
-        setMapMarker()
-    })
-}
+// function toGetCoordinate() {
+//     let address = state.form.address
+//     state.geocoder.getLocation(address, function (status, result) {
+//         if (status === 'complete' && result.info === 'OK') {
+//             initMap([result.geocodes[0].location.lng, result.geocodes[0].location.lat])
+//             state.form.lng = result.geocodes[0].location.lng
+//             state.form.lat = result.geocodes[0].location.lat
+//             state.form.address = result.geocodes[0].formattedAddress
+//         }
+//     })
+//     nextTick(function () {
+//         removeMarker()
+//         setMapMarker()
+//     })
+// }
 
 onMounted(() => {
     //组件挂载
     initMap([119.22964, 25.99076])
+    //中心位置
 });
 
 </script>

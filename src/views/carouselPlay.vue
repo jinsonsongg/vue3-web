@@ -29,7 +29,11 @@
   </template>
   
   <script setup>
+
+  /***********vue************ */
   import { ref, onMounted, onUnmounted } from 'vue'
+  
+  /***********常量************* */
   const props = defineProps({
     sliders: {
       type: Array,
@@ -53,6 +57,7 @@
   // 偏移量
   var left = 0;
   
+  /***********方法************ */
   const autoplayFn = () => {
     clearInterval(timer)
     timer = setInterval(() => {

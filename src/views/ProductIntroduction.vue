@@ -18,12 +18,9 @@
               <span class="cardsay">帮助企业最大程度降本增效</span>
               <br>
               <el-button class="cardbutton">跳转详情</el-button>
-
             </div>
           </div>
         </el-card>
-
-
         <el-card class="card wow animate__flipInY"  data-wow-delay="0.7s"  >
           <img src="../img/img_2.png"
             class="image" />
@@ -35,7 +32,6 @@
               <span class="cardsay">帮助企业最大程度降本增效</span>
               <br>
               <el-button class="cardbutton">跳转详情</el-button>
-
             </div>
           </div>
         </el-card>
@@ -50,13 +46,11 @@
               <span class="cardsay">帮助企业最大程度降本增效</span>
               <br>
               <el-button class="cardbutton">跳转详情</el-button>
-
             </div>
           </div>
         </el-card>
       </div>
         <div class="carddiv">
-
         <el-card class="card wow animate__flipInY"  data-wow-delay="0.6s">
           <img src="../img/img_4.png"
             class="image" />
@@ -68,7 +62,6 @@
               <span class="cardsay">帮助企业最大程度降本增效</span>
               <br>
               <el-button class="cardbutton">跳转详情</el-button>
-
             </div>
           </div>
         </el-card>
@@ -83,7 +76,6 @@
               <span class="cardsay">帮助企业最大程度降本增效</span>
               <br>
               <el-button class="cardbutton">跳转详情</el-button>
-
             </div>
           </div>
         </el-card>
@@ -98,31 +90,11 @@
               <span class="cardsay">帮助企业最大程度降本增效</span>
               <br>
               <el-button class="cardbutton">跳转详情</el-button>
-
             </div>
           </div>
         </el-card>
       </div>
-
-
-      <!-- 一行三列
-            <el-row :gutter="20">
-                <el-col :span="6"><div class="grid-content ep-bg-purple" /></el-col>
-                <el-col :span="6"><div class="grid-content ep-bg-purple" /></el-col>
-                <el-col :span="6"><div class="grid-content ep-bg-purple" /></el-col>
-            
-            </el-row>
-            <el-row :gutter="20">
-                <el-col :span="6"><div class="grid-content ep-bg-purple" /></el-col>
-                <el-col :span="6"><div class="grid-content ep-bg-purple" /></el-col>
-                <el-col :span="6"><div class="grid-content ep-bg-purple" /></el-col>
-                
-            </el-row> -->
     </div>
-
-
-
-
   </div>
 </template>
 <style>
@@ -130,7 +102,6 @@
   text-align: center;
   margin: 10px;
   
-  /* height: 800px; */
   .title{
     font-size: 50px;
     margin: 50px 0 20px 0;
@@ -176,13 +147,8 @@
   transition: transform 0.5s, filter 0.5s;
   
   .image{
-    /* min-height: 300px;
-    min-width: 300px;
-    max-width: 330px;
-    max-width: 330px; */
     width: 330px;
     height: 330px;
-    /* margin: 10px; */
   }
 
   .cardtitle{
@@ -219,10 +185,3 @@
   filter: none;
 }
 </style>
-<script setup>
-
-import { ref } from 'vue';
-
-const cardfilter = ref([]);
-
-</script>

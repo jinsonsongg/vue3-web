@@ -6,7 +6,6 @@
             <div class="title">护工服务系统</div>
         </div>
         <div class="b" v-if="false">
-
             <div>
                 <h1>一款针对医院的护理关照系统</h1>
 
@@ -40,45 +39,39 @@
             <h1>我们产品的特点</h1>
         </div>
         <div class="characteristic">
-
             <div class="trait">
                 <img class="img" src="../img/yihu1.png" alt="">
-
             </div>
             <div class="trait">
                 <img class="img" src="../img/yihu2.png" alt="">
-
             </div>
             <div class="trait">
                 <img class="img" style="height: 250px;" src="../img/yihu3.png" alt="">
-
             </div>
             <div class="trait">
                 <img class="img" style="width: 250px; height: 250px;" src="../img/yihu4.png" alt="">
-
             </div>
             <div class="trait">
                 <img class="img" src="../img/yihu5.png" alt="">
-
             </div>
-
         </div>
-        
         <div class="AvailableScenarios">
-            
-        <h1>可用场景</h1>
+            <h1>可用场景</h1>
             <img class="img" src="../img/病床白.png" alt="">
         </div>
         <div class="Productadvantages">
-            <h1>产品优势</h1> 
-
-            <div>我们的优势...</div>
+            <h1>产品优势</h1>
+            <div style="display: flex;">
+                <div class="image-item" v-for="img in imgs" :key="img">
+                    <img :src="img" alt="" class="img">
+                </div>
+            </div>
         </div>
         <div class="video">
-            <h1>视频</h1> 
-
+            <h1>视频</h1>
             <div class="videodiv">
-            <div id="mse" class="Player" ></div></div>
+                <div id="mse" class="Player"></div>
+            </div>
         </div>
         <footerin />
     </div>
@@ -134,13 +127,13 @@
     align-items: center;
     height: 500px;
     width: 100%;
+
     .trait {
         margin: 50px;
         margin-left: -1%;
         width: 200px;
         height: 200px;
         border-radius: 100px;
-        /* border: 1px palegreen solid; */
     }
 
     .img {
@@ -149,7 +142,7 @@
     }
 }
 
-.AvailableScenarios{
+.AvailableScenarios {
     width: 100%;
     height: 400px;
     /* margin: 50px; */
@@ -158,20 +151,36 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .img{
+
+    .img {
         width: 50%;
     }
 }
-.Productadvantages{
+
+.Productadvantages {
     width: 100%;
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    .img {
+        width: 300px;
+        height: auto;
+    }
+
+    .image-item {
+        flex: 1;
+        margin-right: 30px;
+    }
+
+    .image-item:last-child {
+        margin-right: 0;
+    }
 }
 
-.video{
+.video {
     width: 100%;
     height: 600px;
     display: flex;
@@ -179,10 +188,10 @@
     align-items: center;
     flex-direction: column;
 
-    .videodiv{
+    .videodiv {
         width: 800px;
     }
-    
+
 }
 </style>
 <script setup>
@@ -204,7 +213,6 @@ const imgs = ref([
     '/src/img/bigScreen2.png',
     '/src/img/bigScreen3.png',
     '/src/img/bigScreen4.png',
-    '/src/img/bigScreen3.png',
 ]);
 
 
@@ -225,14 +233,14 @@ onMounted(async () => {
 });
 
 
-function startplayvideo(){
-  let player = new Player({
-  id: 'mse',
-  url: 'http://s2.pstatp.com/cdn/expire-1-M/byted-player-videos/1.0.0/xgplayer-demo.mp4',
-  download: true,
-  fluid: true,
-  fitVideoSize: 'auto', 
-});
+function startplayvideo() {
+    let player = new Player({
+        id: 'mse',
+        url: 'http://s2.pstatp.com/cdn/expire-1-M/byted-player-videos/1.0.0/xgplayer-demo.mp4',
+        download: true,
+        fluid: true,
+        fitVideoSize: 'auto',
+    });
 }
 
 // onMounted(()=>{

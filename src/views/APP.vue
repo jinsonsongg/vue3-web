@@ -1,5 +1,7 @@
 <script setup>
+/***********路由组件********** */
 import { RouterLink, RouterView } from 'vue-router';
+/**************组件************ */
 import navbar from './nav2.vue';
 import footerin from './footer.vue';
 import carousel from './carousel.vue';

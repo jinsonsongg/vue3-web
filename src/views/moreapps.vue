@@ -14,21 +14,17 @@
                     <span class="" style="margin-top: 50px;">通过微信小程序了解，用户可以得到各种生活方面的帮助。</span>
                 </div>
             </div>
-            <div class="app box  card wow animate__bounceInUp"  data-wow-delay="0.2s">
-
+            <div class="app box card wow animate__bounceInUp"  data-wow-delay="0.2s">
                 <div class="content" style="background: linear-gradient(135deg, #FFAA00, #FF5E3A);">
                     <img class="appimg" src="../img/Solid_Brands_Android.png" alt="">
-                    
                     <h2><br><br><br><br>安卓</h2>
                     <img src="1" alt="">
                     <span class="" style="margin-top: 50px;">通过安卓手机设置各种提示</span>
                 </div>
             </div>
             <div class="app box  card wow animate__bounceInUp"  data-wow-delay="0.3s">
-
                 <div class="content" style="background: linear-gradient(135deg, #F6CEEC, #D939CD);">
                     <img class="appimg" src="../img/Solid_Brands_Apple.png" alt="">
-                    
                     <h2><br><br><br><br>苹果</h2>
                     <img src="1" alt="">
                     <span class="" style="margin-top: 50px;">尚未开发</span>
@@ -38,25 +34,20 @@
 
                 <div class="content" style="background: linear-gradient(135deg, #6A11CB, #2575FC);">
                     <img class="appimg" src="../img/Solid_Devices_Watch.png" alt="">
-                    
                     <h2><br><br><br><br>手表</h2>
                     <img src="1" alt="">
                     <span class="" style="margin-top: 50px;">通过手表实时了解呼叫信息。</span>
                 </div>
             </div>
             <div class="app box  card wow  wow animate__bounceInUp"  data-wow-delay="0.5s">
-
                 <div class="content" style="background: linear-gradient(135deg, #67B26F, #4CA2CD);">
                     <img class="appimg" src="../img/Solid_Devices_Server.png" alt="">
-                    
                     <h2><br><br><br><br>服务器</h2>
                     <img src="1" alt="">
                     <span class="" style="margin-top: 50px;">服务器储存所有信息。</span>
                 </div>
             </div>
         </div>
-
-
     </div>
 </template>
 <style scoped>
@@ -64,7 +55,6 @@
     text-align: center;
     margin: 10px;
 
-    /* height: 800px; */
     .title {
         font-size: 50px;
         margin: 50px 0 20px 0;
@@ -84,7 +74,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-
     .app {
         width: 200px;
         height: 350px;
@@ -96,7 +85,6 @@
         overflow: hidden;
         border-radius: 50px;
     }
-
     .appimg {
         width: 24px;
         height: 24px;
@@ -112,7 +100,6 @@
     left: 0;
     background-size: cover;
     background-position: 0 0;
-    /* 过渡效果: css属性名 时长 贝塞尔曲线 */
     transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -121,29 +108,21 @@
     display: block;
     width: 100%;
     height: 200%;
-    /* background: linear-gradient(to bottom,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.25) 55%,
-    rgba(0,0,0,0.8) 100%); */
-    /* 绝对定位 */
     position: absolute;
     left: 0;
     top: 0;
     transform: translateY(0);
-    /* 过渡效果 */
     transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .card .content {
     width: 150px;
     height: 300px;
-    /* border: 1px #000 solid; */
     margin: 0;
     
 }
 
 .card .content *:not(h2) {
-    /* .content下，除了h2，其他元素隐藏并下移20px */
     opacity: 0;
     transform: translateY(20px);
     transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1);
@@ -168,7 +147,6 @@
 .card:hover .content *:not(h2) {
     opacity: 1;
     transform: translateY(0);
-    /* 过渡效果延迟 */
     transition-delay: 0.1s;
 }
 
@@ -179,9 +157,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* 设置3d变化 */
     transform-style: preserve-3d;
-    /* 添加透视效果 */
     perspective: 900px;
 }
 
@@ -196,22 +172,16 @@
     border: #fff 5px solid;
 }
 
-/* 当鼠标所有卡片的父元素点shell上时，
-        所有卡片像Y轴翻转20度 */
 .shell:hover .box {
     transform: rotateY(20deg);
 }
 
-/* 当鼠标悬浮在当前卡片上时，当前卡片的翻转角度为0，
-        并放大一点二五倍，加个阴影 */
 .shell .box:hover {
     transform: rotateY(0deg) scale(1.25);
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
-/* 当鼠标悬浮在卡片上时，
-        当前卡片后面的所有卡片全部都反向翻转负20度 */
 .shell .box:hover~.box {
     transform: rotateY(-20deg);
 }
@@ -230,15 +200,11 @@
 }
 
 .shell .box .content h2 {
-    /* color: rgb(210, 140, 140); */
     transition: 0.3s;
     font-size: 20px;
     transform: translateY(-100px);
 }
-/* 
-.shell .box:hover .content h2 {
-     transform: translateY(-15px); 
-} */
+
 
 .shell .box .content p {
     color: rgb(0, 0, 0);
@@ -252,5 +218,3 @@
     transform: translateY(220px);
 }
 </style>
-<script setup>
-</script>

@@ -9,7 +9,7 @@ import 'wow.js/css/libs/animate.css'
 
 const app = createApp(App)
 
-app.use(animated)
+// app.use(animated)  //有组件重复，不知道为什么
 app.use(router)
 app.use(ElementPlus)
 app.mount('#app')

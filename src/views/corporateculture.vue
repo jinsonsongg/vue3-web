@@ -7,7 +7,7 @@
         </div>
         <div class="b">
             <div>
-                内容
+                企业文化
             </div>
         </div>
     </div>
@@ -29,12 +29,17 @@
 
     .title {
         font-size: 80px;
-
         font-family: PMZDBTT;
         margin-top: 140px;
     }
 }
+.b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 </style>
 <script setup>
+/*********样式********* */
 import '../assets/font/font.css'
 </script>

@@ -10,7 +10,6 @@
         <img src="../img/nobug.png" alt="" class="img wow animate__rollIn">
       </div>
       <div style="margin: -40px 0 0 0;">
-        <!-- <h1>我们解决的问题</h1> -->
         <div>
           <h3>制作的程序</h3>
           <div class="num">{{ num.a }}</div>
@@ -24,7 +23,6 @@
           <div class="num">{{ num.c }}</div>
         </div>
       </div>
-
     </div>
     <div class="C">
       <div class="item card1  wow flipInY" data-wow-delay="0.5s" data-wow-offset="10">
@@ -80,7 +78,6 @@
         </div>
       </div>
     </div>
-
     <div class="bofankuan">
       播放框
     </div>
@@ -180,7 +177,6 @@
   background-image: url(../img/85175230.jpg);
 }
 
-
 .C .item:hover .Shielding {
   transform: translateY(-100%);
   opacity: 1;
@@ -234,8 +230,8 @@ import { ref, onMounted, watch } from 'vue';
 const textarea = ref('')
 
 const list = ref({
-  a: 3,
-  b: 555,
+  a: 9,
+  b: 5556415321511535,
   c: 98
 })
 
@@ -274,22 +270,19 @@ const updateNum = () => {
         num.value[key] = Math.min(num.value[key], targetValue); // 如果 num.value[key] 大于等于 targetValue，则取二者的最小值
       }
     };
-
     increaseNumValue();
   });
   setTimeout(() => {
     num.value = list.value
   }, 3010);
 };
-
-
 function up() {
-  alert(textarea.value);
+
+  if(textarea.value){
+    alert(textarea.value);
+  }
   textarea.value = null;
 }
-
-
-
 onMounted(() => {
   updateNum();
 });
@@ -297,4 +290,4 @@ onMounted(() => {
 watch([list, num], () => {
   updateNum();
 });
-</script>
+</script>tou
